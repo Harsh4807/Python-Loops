@@ -29,7 +29,7 @@ print("Sum of even numbers from 1 to 50 is:",total)
 #Asks the user to enter a number (e.g. 1234)
 #Reverses the number using a while loop
 #Prints the reversed number (e.g. 4321)
-
+'''
 num=int(input("Enter a Number:"))
 rev=-0
 while num>0:
@@ -38,5 +38,27 @@ while num>0:
     num=num // 10
 
 print("Reversd number is:",rev)
-    
-        
+'''
+#Count the Digits in a Number.
+'''
+num= int(input("Enter a number:"))
+count=0
+while num>0:
+    num=num// 10
+    count= count+1
+print(count)
+'''
+# A number is called a palindrome if it reads the same backward as forward.
+'''
+inp=int(input("Enter a No.: "))
+num = inp
+rev=0
+while num>0:
+    last_digit= num%10
+    rev= rev*10+ last_digit
+    num=num//10
+if(rev==inp):
+    print("it is palindrome")
+else:
+    print("its not palindrome")
+'''
